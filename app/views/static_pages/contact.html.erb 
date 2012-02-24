@@ -1,0 +1,5 @@
+<% provide(:title, 'Contact') %>
+<h1>Contact</h1>
+<p>
+shoot us an email and let us know how we are doing
+</p>

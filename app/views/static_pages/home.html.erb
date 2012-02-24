@@ -1,0 +1,16 @@
+<% provide(:title, 'Home') %>
+<h1>Grade schools</h1>
+ 
+<div>
+<%= form_tag '/schools', :method=> :get do   %>
+	<% label_tag :search%>
+	<% text_field_tag :search%>
+		<%= submit_tag :search%>
+		<% end %>
+</div>
+
+<p> 
+  This is the static homepage for grade schools in views/staticpages/home
+</p>
+
+<%= link_to "Sign up now!", '#', class: "signup_button round" %>

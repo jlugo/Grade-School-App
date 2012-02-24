@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @teacher.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @teacher.description %>
+</p>
+<p><%= link_to "Review This Teacher", new_review_url(:teacher_id => @teacher.id) %></p>
+
+
+
+<%= link_to 'Edit', edit_teacher_path(@teacher) %> |
+<%= link_to 'Back', teachers_path %>
